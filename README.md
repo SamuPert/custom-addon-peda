@@ -1,18 +1,22 @@
+![License](https://img.shields.io/github/license/SamuelePerticarari/custom-addon-peda.svg?style=popout-square)
+![Versioning](https://img.shields.io/badge/Python-3.5-brightgreen.svg?style=popout-square)
+![PreReleaseDate](https://img.shields.io/github/release-date-pre/SamuelePerticarari/custom-addon-peda.svg?label=Beta%20release&style=popout-square)
+![LastUpdate](https://img.shields.io/github/last-commit/SamuelePerticarari/custom-addon-peda.svg?style=popout-square)
+--------
+
 # Custom Addon creator for gdb-peda 
 
 Add your custom commands into gdb-peda in a easy way.
 
 ## Installation
-```
-git clone https://github.com/SamuelePerticarari/custom-addon-peda.git ~/custom-addons-peda
-echo "source ~/custom-addons-peda/init.py" >> ~/.gdbinit
-```
+
+#### [Install a released version](https://github.com/SamuelePerticarari/custom-addon-peda/releases)
 
 ## Create custom commands
 
 #### Steps:
 
-0.  Follow "Installation" steps.
+0.  Follow __"Installation"__ steps.
 1.  Create a file in ```~/custom-addons-peda/addons/``` folder.
 2.  Create a class in that file.
 3.  Inside that class create a function.
