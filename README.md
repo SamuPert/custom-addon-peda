@@ -9,10 +9,11 @@ echo "source ~/custom-addons-peda/init.py" >> ~/.gdbinit
 ```
 
 ## Create custom commands
-Steps:
+
+#### Steps:
 
 0.  Follow "Installation" steps.
-1.  Create a file in addons folder.
+1.  Create a file in ```~/custom-addons-peda/addons/``` folder.
 2.  Create a class in that file.
 3.  Inside that class create a function.
 4.  Save.
@@ -41,16 +42,16 @@ Reading symbols from uaf...(no debugging symbols found)...done.
 gdb-peda$ 
 ```
 
-Commands are mapped to function names.
+### Commands are mapped to function names.
 
 ```python
 def MyAwesomeFunction(self,args*):
 	.....
 	return True
 ```
-Will be called in gdb as:
+Will be invoked in gdb as:
 
-```gdb
+```bash
 gdb-peda$ MyAwesomeFunction args ...
 ```
 
